@@ -26,7 +26,8 @@
 
   --blue-100: #E4ECFF;
   --purple: #CBACF9;
-
+  --dark-blue: #001f3d;
+  
   --border: hsl(var(--border));
   --input: hsl(var(--input));
   --ring: hsl(var(--ring));
@@ -122,6 +123,26 @@ body {
   line-height: 1.5;
   margin: 0;
   padding: 0;
+}
+/* Світла тема (default) */
+/* body {
+  background-color: var(--white);
+  color: var(--black);
+} */
+
+/* Темна тема */
+.dark body {
+  background-color: var(--black-100);
+  color: var(--white-100);
+}
+
+/* Або для кастомних класів */
+.dark .bg-white {
+  background-color: var(--black-100);
+}
+
+.dark .text-purple {
+  color: var(--blue-100);
 }
 
 .border-lg { border-radius: var(--radius-lg); }
