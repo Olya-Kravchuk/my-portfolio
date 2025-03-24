@@ -3,6 +3,7 @@ import { Spotlight } from './ui/Spotlight'
 // import { cn } from '@/lib/utils'
 import { TextGenerateEffect } from './ui/TextGenerateEfect'
 import MagicButton from './ui/MagicButton'
+import { FaLocationArrow } from 'react-icons/fa'
 
 const Hero = () => {
   return (
@@ -30,12 +31,16 @@ const Hero = () => {
             <h2 className='uppercase tracking-widest text-xs text-center text-blue-100 max-w-80'>Dynamic web magic with Next.js</h2>
             <TextGenerateEffect
               className='text-center text-[40px] md:text-5xl lg:text-6xl'
-              words='Transforming Concepts into Seamless Experiences'
+              words='Transforming Concepts into Seamless User Experiences'
             />
 
             <p className='text-center '>Hi, I&apos;m Olha, Developer based in Germany</p>
             <a href="#about">
-              <MagicButton title="Show my work"/>
+              <MagicButton 
+                title="Show my work"
+                icon={<FaLocationArrow />}
+                position='right'
+              />
             </a>
           </div>
         </div>
