@@ -95,6 +95,18 @@
 @keyframes scroll {
   to { transform: translate(calc(-50% - 0.5rem)); }
 }
+.scroll {
+  animation: scroll var(--animation-duration, 40s) linear infinite;
+  animation-direction: var(--animation-direction, forwards);
+  animation-play-state: running;
+}
+.pause-on-hover {
+  animation-play-state: running;
+}
+
+.pause-on-hover:hover {
+  animation-play-state: paused;
+}
 
 /* Анімації як класи */
 .accordion-down { animation: accordion-down 0.2s ease-out; }
@@ -154,3 +166,4 @@ body {
 .bg-white { background-color: var(--white); }
 .bg-blue-100 { background-color: var(--blue-100); }
 .text-purple { color: var(--purple); }
+
